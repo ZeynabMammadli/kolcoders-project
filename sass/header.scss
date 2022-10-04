@@ -1,0 +1,90 @@
+header{
+    padding: 20px 0;
+    .all{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            display: flex;
+            li{
+                margin-right: 40px;
+                a{
+                    color: #272A2A;
+                }
+            }
+        }
+        .notification{
+            position: relative;
+            padding: 6px 0;
+            span{
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                background-color: red;
+                top: 23%;
+                left: 13px;
+                border-radius: 100%;
+                border: 1px solid white;
+            }
+            .dropdown{
+                background:#FFFFFF;
+                padding: 0 20px;
+                position: absolute;
+                right: -143%;
+                top: 35px;
+                height: 0px;
+                overflow: hidden;
+                width: 333px;
+                background: #FFFFFF;
+                box-shadow: 0px 16px 120px -24px rgba(39, 42, 42, 0.12);
+                border-radius: 16px;
+                z-index: 999;
+                .inner-drop{
+                    display: block;
+                
+                    li{
+                        margin-bottom: 20px;
+                        border-bottom:1px solid #F1F4F4;;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 28px; 
+                        color: #272A2A;
+                        margin-right: 0px;
+                        padding: 10px 10px 5px 10px;
+                        &:hover{
+                            background-color: rgba(18, 171, 165, 0.3);
+                            border-radius:8px;
+                          
+                        }
+                        p{
+                            color: #8A9393;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-family: "sf-regular";
+                        }
+                        
+                    }
+                    a{  
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #12ABA5;
+                        display: block;
+                        text-align: center;
+                       
+                    }
+                }
+            }
+
+            &:hover{
+                .dropdown{
+                    padding: 16px 20px;
+                    transition: ease-in-out 0.5s;
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
